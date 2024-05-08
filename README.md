@@ -32,53 +32,32 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
-
 ```
-module Boolean_min(A,B,C,D,W,X,Y,Z,F1,F2);
-input A,B,C,D,W,X,Y,Z;
-wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
-output F1,F2;
+/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+
+Developed by: M.SAKTHIVEL
+RegisterNumber:212222240088
+
+module combinationalcircuit(A,B,C,D,F1);
+input A,B,C,D;
+output F1;
+wire x1,x2,x3,x4,x5;
 assign x1=(~A)&(~B)&(~C)&(~D);
 assign x2=(A)&(~C)&(~D);
 assign x3=(~B)&(C)&(~D);
 assign x4=(~A)&(B)&(C)&(D);
 assign x5=(B)&(~C)&(D);
-assign x6=(X)&(~Y)&(Z);
-assign x7=(~X)&(~Y)&(Z);
-assign x8=(~W)&(X)&(Y);
-assign x9=(W)&(~X)&(Y);
-assign x10=(W)&(X)&(Y);
 assign F1=x1|x2|x3|x4|x5;
-assign F2=x6|x7|x8|x9|x10;
-endmodule
+endmodule 
 ```
-```
-Developed by: M.SAKTHIVEL
-
-RegisterNumber:212222240088
-
-*/
-```
-
-**RTL realization**
-
-![OUT 1 EX 2](https://github.com/Sakthimurugavel/BOOLEAN_FUNCTION_MINIMIZATION/assets/118707246/9c28a750-49d2-4afb-81a1-0b1dbf3661d1)
-
 
 **Output:**
 
+**RTL realization**
+![Screenshot 2024-03-24 141634](https://github.com/MOHAMEDRIDWAN/BOOLEAN_FUNCTION_MINIMIZATION/assets/146993368/62ea4916-36fc-4e78-b4b0-90848ff33935)
 
-![out 2 ex 2](https://github.com/Sakthimurugavel/BOOLEAN_FUNCTION_MINIMIZATION/assets/118707246/d8254db6-49e2-440d-b5e7-d20118bee03e)
-
-
-
-## Logic symbol & Truthtable:
-
-
-![out 3 ex 2](https://github.com/Sakthimurugavel/BOOLEAN_FUNCTION_MINIMIZATION/assets/118707246/b976751d-ccbd-4f99-b29c-823ff46c604c)
-
-![out 4 ex 2](https://github.com/Sakthimurugavel/BOOLEAN_FUNCTION_MINIMIZATION/assets/118707246/40f7d558-1407-4264-94df-6d252d792565)
-
+**Timing Diagram**
+![Screenshot 2024-03-24 142440](https://github.com/MOHAMEDRIDWAN/BOOLEAN_FUNCTION_MINIMIZATION/assets/146993368/a1dfc5c5-20ae-457a-b244-ff068731e791)
 
 **Result:**
 
